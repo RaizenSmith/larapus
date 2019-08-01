@@ -20,7 +20,6 @@ class CreatePasoksTable extends Migration
 
             $table->unsignedBigInteger('id_buku');
             $table->foreign('id_buku')->references('id')->on('bukus')->onDelete('cascade');
-            
             $table->Integer('jumlah');
             $table->date('tanggal');
             $table->timestamps();
