@@ -33,14 +33,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                    @guest
-                    {{-- kondisi --}}
-                    @else
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">nav link 1</a>
-                    </li>
-                    @endguest
+                        @guest
+                        {{--  Kondisi  --}}
+                        @else
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">Menu 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">Menu 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">Menu 3</a>
+                            </li>
+                        @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
