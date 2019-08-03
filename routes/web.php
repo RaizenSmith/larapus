@@ -18,8 +18,11 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
+// backend route
+Route::group(['prefix' => 'admin', 'middleware' => ['auth','role:admin']], function () {
     Route::get('/', function () {
         return view('backend.index');
     });
+    
+    // Route::resource('user','UserController');
 });
