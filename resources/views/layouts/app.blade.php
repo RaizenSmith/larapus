@@ -9,8 +9,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    {{-- <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script> --}}
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -37,13 +37,13 @@
                         {{--  Kondisi  --}}
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Menu 1</a>
+                                <a class="nav-link" href="#">Menu (DIAJIBKAN </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Menu 2</a>
+                                <a class="nav-link" href="#">Menu 2</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Menu 3</a>
+                                <a class="nav-link" href="#">Menu 3</a>
                             </li>
                         @endguest
                     </ul>

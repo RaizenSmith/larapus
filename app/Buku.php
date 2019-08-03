@@ -6,15 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Buku extends Model
 {
-    protected $fillable = ['judul','nisn','penulis',
-        'tahun','stok','harga_pokok','harga_jual','ppn','diskon'];
+    protected $fillable = 
+    ['id_kategori','id_penerbit','judul','jumlah_halaman','deskripsi','nama_pengarang','tahun_terbit'];
     public $timestamps = true;
-    public function pasok()
+
+    public function kategori()
     {
-        return $this->hasMany('App\Pasok','id_pasok');
+        return $this->belongsTo('App\Kategori', 'id_kategori');
     }
-    public function penjual()
+    public function penerbit()
     {
-        return $this->hasMany('App\Penjualan','id_penjualan');
+        return $this->belongsTo('App\Penerbit', 'id_penerbit');
     }
 }
