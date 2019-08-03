@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use App\User;
 use App\Role;
-use App\Permision;
+// use App\Permision
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,8 +14,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(error::class);
-        // $this->call(UserSeeder::class);
+        
+        $this->call(UserSeeder::class);
 
         
     }
