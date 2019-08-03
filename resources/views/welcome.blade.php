@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome
+                    Bokoo
                 </div>
 
                 <div class="links">
